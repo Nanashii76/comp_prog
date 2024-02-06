@@ -1,6 +1,6 @@
 # Programação competitiva
 
-### Estudos de programação competitiva e contest feitos
+### Estudos de programação competitiva e contests feitos
 
 <a href="https://github.com/Nanashii76/comp_prog/tree/main/theory"> Teoria </a>
 
