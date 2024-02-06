@@ -16,10 +16,10 @@ typedef struct node {
 
 
 // Sorted insertion and creation of linked list 
-void sorted_insert(node *node, int x) {
+void sorted_insert(struct node *node, int x) {
 
-    struct node *temp = node, *q = NULL, *new;
-    new = malloc(sizeof(node));
+    struct node *new, *temp = node, *q = NULL;
+    new = (struct node*)malloc(sizeof(struct node));
     new->data = x;
     new->next = NULL;
 
@@ -55,7 +55,31 @@ node *search(node *node, int key) {
 
 }
 
+int hash(int key) {
+    return key%10;
+}
 
+// Insert in a Hash Table
+void insert(node *H[], int key) {
+    int index=hash(key);
+    sorted_insert(&(H[index]),key);
+}
+
+
+int main(void) {
+
+    struct node *HT[10];
+    
+    for(int i = 0; i<10; ++i)
+        HT[i] = NULL;
+
+    insert(HT,12);
+    insert(HT,22);
+    insert(HT,42);
+
+
+
+}
 
 
 
