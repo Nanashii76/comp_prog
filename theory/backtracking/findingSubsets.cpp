@@ -23,6 +23,30 @@ void findSubsets(char *input, char *output, int i, int j) {
 }
 
 
+void substringsBit(std::string s1, int i) {
+
+    int index = 0;
+    while(i != 0) {
+        int last_bit=i&1;
+        if(last_bit)
+            std::cout << s1[index];
+        index++;
+        i = 1>>1;
+    }
+
+    std::cout << std::endl;
+
+}
+
+void generateSubstring(std::string s1) {
+
+    for(int i = 0; i < (1<<s1.length());++i)
+        substringsBit(s1, i);
+    return;
+
+}
+
+
 
 
 int main(){
