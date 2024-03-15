@@ -13,5 +13,5 @@ My journey studying programming, dsa and c/c++ tricks
 
 From the Professor Edson Alves in _Special Programming Topics_, a class in the University of Brasília (FGA).
 
-- [profile](https://github.com/NATANGOATOSO)
+- [profile](https://github.com/edsomjr)
 
