@@ -101,7 +101,7 @@ int main() {
     // Buscando um elemento na tabela hash
     int key_to_search = 20;
     Item result = HTbusca(key_to_search);
-    if (result.key != -1) {
+    if (result.key != 0) {
         printf("Elemento encontrado: key=%d, value=%d\n", result.key, result.value);
     } else {
         printf("Elemento com a chave %d nao encontrado na tabela hash.\n", key_to_search);
@@ -111,10 +111,10 @@ int main() {
     int key_to_remove = 20;
     HTdelete(key_to_remove);
     result = HTbusca(key_to_remove);
-    if (result.key != -1) {
+    if (result.key != 0) {
         printf("Elemento com a chave %d encontrado apos a remocao.\n", key_to_remove);
     } else {
-        printf("Elemento com a chave %d nao encontrado após a remocao.\n", key_to_remove);
+        printf("Elemento com a chave %d nao encontrado apos a remocao.\n", key_to_remove);
     }
     
     // Imprimindo a quantidade de elementos atuais da tabela hash
